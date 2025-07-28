@@ -1,0 +1,49 @@
+@{
+    Layout = "_Layout";
+}
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">Aquanox</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="/Club/List">Clubs</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Class/List">Classes</a></li>
+          <li class="nav-item"><a class="nav-link" href="/Membership/List">Membership</a></li>
+          <li class="nav-item"><a class="nav-link" href="/PrivateClass/List">Private Training</a></li>
+        </ul>
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="/Admin/Home">Admin</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Welcome message between navbar and image -->
+<div class="text-center py-4 bg-light border-bottom">
+    <h1 class="display-5 mb-0">Welcome to Aquanox</h1>  
+</div>
+
+<!-- Centered banner image with custom dimensions -->
+<div class="container-fluid d-flex justify-content-center align-items-center px-0" style="height: 400px;">
+    <img src="~/images/aquanox.jpg" 
+         class="img-fluid" 
+         style="width: 80%; max-width: 1000px; height: 300px; object-fit: cover;" 
+         alt="Aquanox Banner">
+</div>
+
+
+<main class="container mt-4">
+    @RenderBody()
+</main>
+
+<footer class="text-center py-3 border-top mt-4">
+    <a href="/Home/Contact">Contact Us</a> |
+    <a href="/Home/Privacy">Privacy Policy</a> |
+    <a href="/Home/Terms">Terms & Conditions</a> |
+    <a href="/Home/Cookies">Cookie Policies</a>
+</footer>
