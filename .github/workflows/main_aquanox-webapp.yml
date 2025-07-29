@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP.Net Core app to Azure Web App - aquanox-webapp
+name: Build and deploy ASP.Net Core app to Azure Web App - Aquanox-webapp
 
 on:
   push:
@@ -51,15 +51,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A9211713759F49AC80FEC8E2B95587F6 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_BF28A178ADEA482BB2C14993319E0272 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_2675F09FE8C2440CB6B28D94F6703BC6 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_4F89C082332C432FB1EB503E1ADF2FF6 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F9451EBC89B447D5AFF641E9483B0A48 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_87EE4E9D5E164ADAB2D9F54AB9EC2927 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'aquanox-webapp'
+          app-name: 'Aquanox-webapp'
           slot-name: 'Production'
           package: .
           
